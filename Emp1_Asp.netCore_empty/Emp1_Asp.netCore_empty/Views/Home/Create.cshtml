@@ -1,0 +1,26 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Emp1_Asp.netCore_empty.Model.Employee
+@inject Emp1_Asp.netCore_empty.Model.IEmployeeRepository empRepository
+
+@{
+    @*@model Employee
+        @inject IEmployeeRepository empRepository*@
+
+
+    <form asp-controller="home" asp-action="create" method="post">
+        <div>
+            <label asp-for="Name"></label>
+            <div>
+                <input asp-for="Name">
+            </div>
+        </div>
+
+        <div>
+            <button type="submit">Create</button>
+        </div>
+
+        <div>
+            Total Employees Count = @empRepository.GetAllEmployees().Count().ToString()
+        </div>
+    </form>
+}

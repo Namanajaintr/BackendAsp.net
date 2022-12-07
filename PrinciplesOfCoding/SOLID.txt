@@ -1,0 +1,9 @@
+SOLID is basically 5 principles, 
+which will help to create a good software architecture. 
+You can see that all design patterns are based on these principles.
+
+S - single responsibility principle (SRP)
+O - open closed principle (OCP)
+L - Liskov substitution principle (LSP)
+I - interface segregation principle (ISP)
+D - Dependency injection principle (DIP)

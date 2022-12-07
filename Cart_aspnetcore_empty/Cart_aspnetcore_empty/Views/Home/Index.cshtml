@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    //ViewBag
+
+    <h3>@ViewBag.Title</h3>
+
+    <h5>Product_Id: @ViewBag.Cart.Product_Id</h5>
+    <h5>Product_Name: @ViewBag.Cart.Product_Name</h5>
+    <h5>Product_Qty: @ViewBag.Cart.Product_Qty</h5>
+    <h5>Product_Price: @ViewBag.Cart.Product_Price*@ViewBag.Cart.Product_Qty</h5>
+
+    <ul>
+        <h5>Payment_Mode:</h5>
+        @{foreach (var pdt in ViewBag.Cart.Payment_Mode) {
+                <li class="Cart">@pdt</li>
+            }}
+    </ul>
+    <ul>
+        <h5>Product_Type:</h5>
+        @{foreach (var pdt in ViewBag.Cart.Product_Type) {
+                <li class="Cart">@pdt</li>
+            }}
+    </ul>
+
+    //<h5>Payment_Mode: @ViewBag.Cart.Payment_Mode</h5>
+    //<h5>Product_Type: @ViewBag.Cart.Product_Type</h5>
+
+
+}

@@ -1,0 +1,16 @@
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.exe
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.deps.json
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.runtimeconfig.json
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.runtimeconfig.dev.json
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.dll
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\ref\PrinciplesOfCoding.dll
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\bin\Debug\net5.0\PrinciplesOfCoding.pdb
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.csproj.AssemblyReference.cache
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.AssemblyInfoInputs.cache
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.AssemblyInfo.cs
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.csproj.CoreCompileInputs.cache
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.dll
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\ref\PrinciplesOfCoding.dll
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.pdb
+C:\Users\107019\source\repos\PrinciplesOfCoding\PrinciplesOfCoding\obj\Debug\net5.0\PrinciplesOfCoding.genruntimeconfig.cache

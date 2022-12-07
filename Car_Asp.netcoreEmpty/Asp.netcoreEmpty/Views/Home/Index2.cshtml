@@ -1,0 +1,26 @@
+﻿@*@model System.Collections.Generic.IEnumerable<Asp.netcoreEmpty.ViewModel.HomeCarIndex1>*@
+@*@model System.Collections.Generic.IEnumerable<Asp.netcoreEmpty.Modal.Car>*@
+
+
+@{
+    ViewBag.Title = "All the cars list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    //4. ViewModel
+
+    @*<h3>@Model.Title</h3>*@
+
+    @foreach (var car in @Model) {
+        <h5>Brand: @car.Brand</h5>
+        <h5>Number: @car.Car_No</h5>
+        <h5>Color: @car.Color</h5>
+        <h5>Price: @car.Price</h5>
+    }
+
+    @section Scripts {
+        <script src="~/js/CustomJavascript.js"></script>
+    }
+
+}

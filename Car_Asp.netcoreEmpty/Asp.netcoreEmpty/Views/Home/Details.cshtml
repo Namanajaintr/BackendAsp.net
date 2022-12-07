@@ -1,0 +1,71 @@
+﻿@*@model Asp.netcoreEmpty.ViewModel.HomeCarIndex1*@
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Asp.netcoreEmpty.Modal.Car>
+
+@{
+    ViewBag.Title = "All the cars list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--<h1 class="text-bg-danger">I am from Details page : All the cars list</h1>
+<table class="table-bordered">
+    <tr>
+        <th>
+            @@Html.DisplayNameFor(model => model.Car_No)-->
+@*<button class="btn btn-danger">edit</button>*@
+<!--</th>
+        <th>
+            @@Html.DisplayNameFor(model => model.Brand)
+        </th>
+        <th>
+            @@Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @@Html.DisplayNameFor(model => model.Price)
+        </th>
+    </tr>
+    @@foreach (var item in Model) {
+<tr>
+    <td>
+        @@Html.DisplayFor(modelItem => item.Car_No)
+    </td>
+    <td>
+        @@Html.DisplayFor(modelItem => item.Brand)
+    </td>
+    <td>
+        @@Html.DisplayFor(modelItem => item.Color)
+    </td>
+    <td>
+        @@Html.DisplayFor(modelItem => item.Price)
+    </td>
+</tr>
+    }
+</table>-->
+
+@foreach (var item in Model) {
+    <div class="card">
+        <div class=" card text-dark bg-warning mb-3 justify-content-center " style="max-width: 25rem;">
+            <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title text-capitalize text-success">@item.Brand</h2>
+                <p class="card-text">@item.Car_No</p>
+                <p class="card-text">@item.Color</p>
+                <p class="card-text">Rs. @item.Price</p>
+
+            </div>
+            <div class="card-footer bg-transparent border-dark">
+                <div class="card-footer text-center">
+                    <a asp-controller="Home" asp-action="Index1" asp-route-Car_No="@item.Car_No" class="btn btn-success"> VIEW</a>
+                    <a asp-controller="Home" asp-action="Index1" asp-route-Car_No="@item.Car_No" class="btn btn-primary">UPDATE </a>
+                    <a asp-controller="Home" asp-action="Index1" asp-route-Car_No="@item.Car_No" class="btn btn-danger"> DELETE</a>
+                    <a asp-controller="Home" asp-action="Index1" asp-route-Car_No="@item.Car_No" class="btn btn-dark"> DONE</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+}
+@section Scripts {
+    <script src="~/js/CustomJavascript.js"></script>
+}

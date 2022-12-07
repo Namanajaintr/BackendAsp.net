@@ -1,0 +1,36 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    //Environment Tag Helper Attributes : names , include , exclude
+
+    @*gets output
+        <environment names="Staging,Production">
+            <strong>IWebHostEnvironment.EnvironmentName is Staging or Production</strong>
+        </environment>*@
+
+    @*<environment include="Staging">
+            <strong>IWebHostEnvironment.EnvironmentName is Staging or Production</strong>
+        </environment>*@
+
+    @*gets output
+            <environment include="Development">
+            <strong>IWebHostEnvironment.EnvironmentName is Staging or Production</strong>
+        </environment>*@
+
+    @*<environment include="Production">
+                <strong>IWebHostEnvironment.EnvironmentName is Staging or Production</strong>
+        </environment>*@
+
+    @*<environment exclude="Development">
+            <strong>IWebHostEnvironment.EnvironmentName is not Development</strong>
+        </environment>*@
+
+    <cache enabled="true">
+        Current Time Inside Cache Tag Helper: @DateTime.Now
+    </cache>
+
+    <cache expires-on="@new DateTime(2025,1,29,17,02,0)">
+        Current Time Inside Cache Tag Helper: @DateTime.Now
+    </cache>
+
+    <img src="~/images/flowers.jpg" asp-append-version="true">
+}

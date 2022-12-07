@@ -1,0 +1,57 @@
+﻿@*@model IEnumerable<Cart_aspnetcore_empty.Modal.Cart>
+    @{
+
+        <table>
+            <tr>
+                <th> Product_ID</th>
+                <th> Product_Name</th>
+                <th> Product_Price</th>
+                <th> Product_Qty</th>
+                <th> Payment_Mode</th>
+                <th> Product_Type</th>
+            </tr>
+           @foreach (var cart in Model) {
+            <tr>
+                <td>@cart.Product_Id</td>
+                <td>@cart.Product_Name</td>
+                <td> @cart.Product_Price</td>
+                <td> @cart.Product_Qty</td>
+                <td> @cart.Payment_Mode</td>
+                <td> @cart.Product_Type</td>
+            </tr>
+           }
+        </table>
+    }*@
+
+
+@model Cart_aspnetcore_empty.ViewModal.HomeIndex1ViewModal
+
+@{
+    <h3>@Model.Title</h3>
+
+    <table>
+        <tr>
+            <th> Product_ID</th>
+            <th> Product_Name</th>
+            <th> Product_Price</th>
+            <th> Product_Qty</th>
+            <th> Payment_Mode</th>
+            <th> Product_Type</th>
+        </tr>
+        @foreach (var cart in Model) {
+    <tr>
+        <td>@cart.Product_ID</td>
+        <td>@cart.Product_Name</td>
+        <td> @cart.Product_Price</td>
+        <td> @cart.Product_Qty</td>
+
+        @foreach (var cart1 in Model.Payment_Mode) {
+            <td> @cart1.Payment_Mode</td>
+        }
+        @foreach (var cart2 in Model.Product_Type) {
+            <td> @cart2.Product_Type</td>
+        }
+    </tr>
+        }
+    </table>
+}

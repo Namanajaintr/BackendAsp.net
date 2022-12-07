@@ -1,0 +1,51 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container m-3">
+        <nav class="navbar navbar-expand bg-warning">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="Home" asp-action="Details"> Details of all Cars </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="Home" asp-action="Index1"> Index1 Details of Particular Car </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="Home" asp-action="Index2"> Index2  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="Home" asp-action="Create"> Search/Create Cars  </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <h1>@ViewBag.Title</h1>
+        @RenderBody()
+    </div>
+    @*@if (IsLayoutBeingRendered == true) {
+            @RenderSection("scripts", required: false)
+
+        }*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @if (IsSectionDefined("Scripts")) {
+        @RenderSection("scripts", required: false)
+
+    }
+
+</body>
+</html>
